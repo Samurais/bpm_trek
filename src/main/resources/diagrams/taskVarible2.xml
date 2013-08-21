@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<variables>
+	<employeeName>Fozzie</employeeName>
+	<numberOfDays>4</numberOfDays>
+	<vacationMotivation>I'm really tired!</vacationMotivation>
+	<managerMotivation>We have a tight deadline!</managerMotivation>
+	<startDate>21-5-2013</startDate>
+	<resendRequest>false</resendRequest>
+</variables>

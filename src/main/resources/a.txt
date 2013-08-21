@@ -1,0 +1,5 @@
+{
+	"employeeName:"johndoe",
+	"numberOfDays":"4",
+	"vacationMotivation":I'm really tired!"
+}
