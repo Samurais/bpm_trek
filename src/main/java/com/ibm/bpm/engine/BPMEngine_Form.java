@@ -22,13 +22,10 @@ import org.dom4j.io.XMLWriter;
 public class BPMEngine_Form {
 
 	public void generateEngine() {
-		//创建Activiti 引擎
 		ProcessEngine processEngine = ProcessEngineConfiguration
 				.createProcessEngineConfigurationFromResource(
 						"diagrams/activiti.cfg.xml").buildProcessEngine();		
-		//获得Activiti服务
 		RepositoryService repositoryService = processEngine.getRepositoryService();
-		//部署流程
 //		Deployment deployment = 	repositoryService.createDeployment()
 //		  .addClasspathResource("diagrams/VacationRequest_deprecated_forms.bpmn20.xml")
 //		  .deploy();
@@ -58,7 +55,6 @@ public class BPMEngine_Form {
 		RuntimeService runtimeService = processEngine.getRuntimeService();
 
 		String procId = runtimeService.startProcessInstanceByKey("vacationRequest_deprecated_forms",variables).getId();
-		//判断流程是否结束
 		System.out.println("Number of process definitions: " + repositoryService.createProcessDefinitionQuery().count());   
 		HistoryService historyService = processEngine.getHistoryService();
 		HistoricProcessInstance historicProcessInstance = historyService.createHistoricProcessInstanceQuery().processInstanceId(procId).singleResult();

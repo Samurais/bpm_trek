@@ -60,7 +60,7 @@ public class BPMEngine_Rest {
         IdentityService identityService = processEngine.getIdentityService();
         
 		String groupId = "accountancy";
-/*		String type = "accountancy-role"; //如果type是assignment可以list到 页面的队列里
+/*		String type = "accountancy-role";
         
         User user = identityService.newUser("johndoe");
         user.setPassword("xxx");
